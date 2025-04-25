@@ -8,13 +8,13 @@ public class Vehicle {
     private int seat;
     private long tax;
 
-    public Vehicle(String noPolice, Types vehicleType, int year, long price, int seat, long tax) {
+    public Vehicle(String noPolice, Types vehicleType, int year, long price, int seat) {
         this.noPolice = noPolice;
         this.vehicleType = vehicleType;
         this.year = year;
         this.price = price;
         this.seat = seat;
-        this.tax = tax;
+        this.tax = (long) (price * 0.01);
     }
 
     public String getNoPolice() {
@@ -41,9 +41,11 @@ public class Vehicle {
         return tax;
     }
 
-    public long getTotal() {
+
+    public long getTotal(){
         return 0;
     }
+
 
     @Override
     public String toString() {
