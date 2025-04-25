@@ -8,13 +8,13 @@ public class Vehicle {
     private int seat;
     private long tax;
 
-    public Vehicle(String noPolice, Types vehicleType, int year, long price, int seat) {
+    public Vehicle(String noPolice, Types vehicleType, int year, long price, int seat, long tax) {
         this.noPolice = noPolice;
         this.vehicleType = vehicleType;
         this.year = year;
         this.price = price;
         this.seat = seat;
-        this.tax = (long) (price * 0.01);
+        this.tax =tax;
     }
 
     public String getNoPolice() {

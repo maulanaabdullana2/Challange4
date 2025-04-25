@@ -11,9 +11,9 @@ public class Income extends Vehicle {
     private int orderPerkm;
     private long total;
 
-    public Income(String noRegister, Types vehicleType, int year, long price, int seat,
+    public Income(String noRegister, Types vehicleType, int year, long price, int seat, long tax,
                   int rent, int orderPerHours, int drive, int order, int orderPerkm, LocalDate transactionDate) {
-        super(noRegister, vehicleType, year, price, seat);
+        super(noRegister, vehicleType, year, price, seat, tax);
         this.rent = rent;
         this.orderPerHours = orderPerHours;
         this.drive = drive;
