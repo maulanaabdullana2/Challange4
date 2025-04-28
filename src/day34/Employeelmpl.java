@@ -32,4 +32,9 @@ public class Employeelmpl implements IEmployee {
         return null;
 
     }
+
+    public void displatSalary(List<Employee> emps) {
+
+    }
+
 }

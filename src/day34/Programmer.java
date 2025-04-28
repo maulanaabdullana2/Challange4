@@ -11,6 +11,10 @@ public class Programmer extends Employee {
         setTotalSalary(salary+transportasi);
     }
 
+    @Override
+    public double getAllowences() {
+        return super.getAllowences()+transportasi;
+    }
 //    public Programmer(String fullName, LocalDate hireDate, double salary, double transportasi) {
 //        super(fullName, hireDate, Roles.PROGRAMMER, salary);
 //        this.transportasi = transportasi;

@@ -6,6 +6,7 @@ public class Sales extends Employee {
     private double bonus;
     private double commision;
 
+
     public Sales(String nationalId, String fullname, int empId, LocalDate hireDate, Roles role, double salary, double totalSalary, double bonus, double commision) {
         super(nationalId, fullname, empId, hireDate, role, salary, totalSalary);
         this.bonus = bonus;
@@ -19,6 +20,10 @@ public class Sales extends Employee {
 //    }
 
 
+    @Override
+    public double getAllowences() {
+        return super.getAllowences()+commision+bonus;
+    }
 
     @Override
     public String toString() {

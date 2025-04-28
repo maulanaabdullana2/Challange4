@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Random;
 
 //1. implementasikan konsep encapsulation
-public class Employee extends Person {
+public class Employee extends Person implements ITask {
     //attribute instance
     private int empId;
     private LocalDate hireDate;
@@ -97,6 +97,10 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
+    public double getAllowences(){
+        return 0;
+    }
+
     public double getTotalSalary() {
         return totalSalary;
     }
@@ -127,4 +131,8 @@ public class Employee extends Person {
                 '}';
     }
 
+    @Override
+    public void startProject(LocalDate starDate, LocalDate endDate) {
+
+    }
 }
